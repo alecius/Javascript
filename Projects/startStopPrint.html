@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start & Stop</title>
+</head>
+<body>
+    <button id="start">Start</button>
+    <button id="stop" style="padding: 200px;">Stop</button>
+    
+</body>
+<script>
+    let start;
+    document.querySelector('#start').addEventListener('click',function(){
+        start=setInterval(function(){
+           console.log("harshit",Date.now())
+        },1000)
+        
+    })
+    document.querySelector('#stop').addEventListener('click',function(){
+            clearInterval(start);
+            console.log("stop")
+        })
+</script>
+</html>
