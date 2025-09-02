@@ -1,1 +1,1 @@
-# Beginner level projects of javascript understanding 
+#javascript understanding 
